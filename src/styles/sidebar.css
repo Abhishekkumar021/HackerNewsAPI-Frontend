@@ -1,5 +1,5 @@
-.sidebar {
-    width: 250px;
+/* .sidebar {
+    width: 18vw;
     background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -9,7 +9,7 @@
 
 .sidebar-links-main {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     width: 100%;
 }
@@ -50,8 +50,227 @@
     border-radius: 8px;
     margin-bottom: 20px;
 }
-.logo a{
+
+.logo a {
     text-decoration: none;
-    color:#000;
+    color: #000;
     font-weight: 800;
+}
+
+
+
+
+@media only screen and (max-width: 912.5px)and (min-width:768px) {
+    .sidebar {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .sidebar-links a {
+        padding: 10px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 912.5px)and (min-width:768px) {
+    .sidebar {
+        width: 25vw;
+    }
+}
+
+
+@media only screen and (max-width: 512px) {
+    .hamburgerBtn {
+        display: block;
+    }
+} */
+
+
+
+
+/* Existing styles */
+
+
+.sidebar-main-div {
+    background-color: #007efd;
+}
+
+.sidebar {
+    width: 18vw;
+    background-color: #f4f4f4;
+    padding: 20px;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    height: 100%;
+    background-color: #007efd;
+    padding-top: 0px;
+}
+
+.sidebar-links-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: #ff9100;
+    padding: 20px 10px;
+    width: 100%;
+    align-self: start;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.sidebar-links a:hover {
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+.logo {
+    margin-top: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 0px;
+    border: 2px solid #f51313;
+    background-color: #e31b1b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
+
+
+
+@media only screen and (max-width: 912.5px) and (min-width: 768px) {
+    .sidebar {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .sidebar-links a {
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .sidebar-main-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+
+
+
+    .sidebar {
+        display: none;
+        width: calc(100vw - 40px);
+        /* height: 100vh; */
+        height: fit-content;
+        position: fixed;
+        top: 0;
+        margin-top: 69px;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+    .hamburgerBtn {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: 18px;
+        right: 15px;
+    }
+
+    .hamburgerBtn .bar {
+        display: block;
+        width: 40px;
+        height: 7px;
+        margin: 3px auto;
+        /* background-color: #333; */
+        transition: all 0.3s ease-in-out;
+        border-radius: 999px;
+    }
+
+    .bar1 {
+        background-color: red;
+    }
+
+    .bar2 {
+        background-color: yellow;
+    }
+
+    .bar3 {
+        background-color: green;
+    }
+
+
+    .hamburgerBtn span:nth-child(1) {
+        top: 5px;
+    }
+
+    .hamburgerBtn span:nth-child(2) {
+        top: 11px;
+    }
+
+    .hamburgerBtn span:nth-child(3) {
+        top: 17px;
+    }
+
+    .hamburgerBtn.show span:nth-child(1) {
+        transform: translate(0, 11px) rotate(135deg);
+    }
+
+    .hamburgerBtn.show span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerBtn.show span:nth-child(3) {
+        transform: translate(0, -9px) rotate(-135deg);
+    }
+
+
+
+    .logo {
+        display: block;
+        width: fit-content;
+        margin: 10px;
+        padding: 8px 5px;
+        border: 2px solid #f51313;
+        background-color: #e31b1b;
+        border-radius: 8px;
+    }
+
+    .hamburgerBtn {
+        display: block;
+    }
+
+    .sidebar.show {
+        display: block;
+        /* display: flex; */
+    }
+
+
+
 }

@@ -66,3 +66,14 @@ html,body {
   padding: 20px;
   overflow-y: auto;
 }
+
+
+@media only screen and (max-width: 512px) {
+  .app-container {
+    flex: auto;
+    flex-direction: column;
+  }
+  .main-content {
+    padding: 0px;
+  }
+}
